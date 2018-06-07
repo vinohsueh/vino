@@ -1,6 +1,13 @@
 server:
   port: 8761
 
+security:
+  basic:
+    enabled: true # 启用身份认证
+  user:
+    name: vino # 定义用户名
+    password: lby1357982 # 定义密码
+
 eureka:
   instance:
     hostname: localhost
