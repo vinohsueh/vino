@@ -17,6 +17,7 @@
 	
 	<modules>
 		<module>vino-eureka</module>
+		<module>vino-eureka-config-server</module>
 	</modules>
 	
 	<dependencies>
