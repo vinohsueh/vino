@@ -12,6 +12,7 @@
 	
 	<modules>
 		<module>vino-eureka-server</module>
+		<module>vino-eureka-config-server-client</module>
 	</modules>
 	
 	<properties>
