@@ -13,6 +13,7 @@
 	<modules>
 		<module>vino-eureka-server</module>
 		<module>vino-eureka-config-server-client</module>
+		<module>vino-auth</module>
 	</modules>
 	
 	<properties>

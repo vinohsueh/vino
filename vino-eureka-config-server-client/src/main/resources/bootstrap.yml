@@ -1,0 +1,27 @@
+server:
+  port: 8885
+spring:
+  application:
+    name: config-client
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://47.104.128.1:8762
+      profile: ${spring.profiles.active}
+      label: ${spring.profiles.active}
+      #fail-fast: true
+      #discovery:
+        #service-id: config-server
+        #enabled: true
+      
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://47.104.128.1:8761/eureka
+    registry-fetch-interval-seconds: 10
