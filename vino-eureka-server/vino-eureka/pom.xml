@@ -21,7 +21,11 @@
 	</properties>
 
 	<dependencies>
-		
+		 <!-- Springsecurity给服务端提供安全访问 -->  
+        <dependency>  
+            <groupId>org.springframework.boot</groupId>  
+            <artifactId>spring-boot-starter-security</artifactId>  
+        </dependency> 
 	</dependencies>
 	<build>
 		<finalName>vino-eureka</finalName>
