@@ -7,13 +7,13 @@ spring:
     active: dev
   cloud:
     config:
-      uri: http://47.104.128.1:8762
+      #uri: http://47.104.128.1:8762
       profile: ${spring.profiles.active}
       label: ${spring.profiles.active}
-      #fail-fast: true
-      #discovery:
-        #service-id: config-server
-        #enabled: true
+      fail-fast: true
+      discovery:
+        service-id: config-server
+        enabled: true
       
 
 eureka:
@@ -23,5 +23,5 @@ eureka:
     lease-expiration-duration-in-seconds: 20
   client:
     serviceUrl:
-      defaultZone: http://vinohsueh:lby1357982@47.104.128.1:8761/eureka
+      defaultZone: http://vinohsueh:lby1357982@localhost:8761/eureka
     registry-fetch-interval-seconds: 10
