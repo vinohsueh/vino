@@ -1,4 +1,4 @@
-package com.vino.shop.auth.vinoauth;
+package com.vino.shop.auth;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

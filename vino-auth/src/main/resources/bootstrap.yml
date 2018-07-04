@@ -1,3 +1,6 @@
+server:
+  port: 8886
+
 spring:
   application:
     name: vino-auth
@@ -5,15 +8,16 @@ spring:
     active: dev
   cloud:
     config:
+      #uri: http://localhost:8762
+      #profile: ${spring.profiles.active}
+      #label: master
       fail-fast: true
       discovery:
         service-id: config-server
         enabled: true
       profile: ${spring.profiles.active}
-      label: ${spring.profiles.active}
----
-spring:
-  profiles: dev
+      label: master
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -21,15 +25,6 @@ eureka:
     lease-expiration-duration-in-seconds: 20
   client:
     serviceUrl:
-      defaultZone: http://pig:gip6666@localhost:1025/eureka
+      defaultZone: http://vinohsueh:lby1357982@localhost:8761/eureka
     registry-fetch-interval-seconds: 10
 
----
-spring:
-  profiles: prd
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://pig:gip6666@eureka:1025/eureka
