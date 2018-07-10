@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>com.vino.shop</groupId>
 		<artifactId>vino</artifactId>
-		<version>${vino.version}</version>
+		<version>1.0.0</version>
 	</parent>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
